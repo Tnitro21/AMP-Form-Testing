@@ -1,0 +1,44 @@
+<!doctype html>
+<html ⚡4email>
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js" async></script>
+  <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" async></script>
+  <style amp4email-boilerplate>body{visibility:hidden}</style>
+</head>
+<body>
+
+<form method="post"
+    action-xhr="https://build.exofactory.biz/AMP_Form_testing/rest/v1/get_urlencoded">
+    <fieldset>
+      <label>
+        <span>Name:</span>
+        <input type="text"
+          name="Name"
+          required>
+      </label>
+      <br>
+      <label>
+        <span>Email:</span>
+        <input type="email"
+          name="Email"
+          required>
+      </label>
+      <br>
+      <input type="submit"
+        value="Submit">
+    </fieldset>
+    <div submit-success>
+      <template type="amp-mustache">
+        Submit successful!
+      </template>
+    </div>
+    <div submit-error>
+      <template type="amp-mustache">
+        Submit failed!
+      </template>
+    </div>
+  </form>
+</body>
+</html>
